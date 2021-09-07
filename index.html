@@ -1,80 +1,136 @@
 <!DOCTYPE>
 <html>
-  <head>
-    <title>Abdulellah Alnumay</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<head>
+  <title>Abdulellah Alnumay</title>
 
-    <style>
-      body {
-          display: flex;
-          flex-direction: column;
-          background-color: rgb(244,244,244);
-          font-family: 'Montserrat', sans-serif;
-          justify-content: center;
-          align-items: center;
-          margin: 0;
-      }
-      h1 {
-          font-size: 100px;
-      }
-      a {
-          font-size: 120%;
-      }
-      .container {
-          height: 300;
-          width: 600;
-          margin-bottom: 250px;
-      }
-      .greetings {
-          display:flex;
-          flex-direction: column;
-          align-content: center;
-          justify-content: center;
-      }
-      .social-network {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-evenly;
-      }
-      .centered-text {
-          text-align: center;
-      }
-      .span-link {
-          margin-right: 10px;
-      }
-      .hello {
-          margin-bottom: 80px;
-      }
-      .iam {
-          font-size: 24px;
-          margin-bottom: -10px;
-      }
-    </style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153466857-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(244, 244, 244);
+      font-family: 'Montserrat', sans-serif;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
 
-      gtag('config', 'UA-153466857-1');
-    </script>
-  </head>
-  <body>
-      <div class="container">
-          <div class="greetings">
-        <h1 class="centered-text hello">Hello.</h1>
-        <p  class="centered-text iam">I'm Abdulellah.</p>
-          </div>
-        <hr/>
-        <div class="social-network">
-          <a href="https://github.com/Abo7atm">Github</a>
-          <a href="https://linkedin.com/in/abdulellah-alnumay">LinkedIn</a>
-          <a href="mailto:iam@abdulellah.io">Email</a>
-        </div>
-      </div>
-  </body>
+    h1 {
+      font-size: 100px;
+    }
+
+    a {
+      font-size: 120%;
+    }
+
+    .container {
+      height: 300;
+      width: 600;
+      margin-bottom: 250px;
+    }
+
+    .greetings {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .social-network {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .centered-text {
+      text-align: center;
+    }
+
+    .span-link {
+      margin-right: 10px;
+    }
+
+    .hello {
+      margin-bottom: 80px;
+    }
+
+    .iam {
+      font-size: 24px;
+      margin-bottom: -10px;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153466857-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153466857-1');
+  </script>
+  <script type="text/javascript">
+    (function (e, t) {
+      var n = e.amplitude || {_q: [], _iq: {}}; var r = t.createElement("script")
+        ; r.type = "text/javascript"
+        ; r.integrity = "sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS"
+        ; r.crossOrigin = "anonymous"; r.async = true
+        ; r.src = "https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js"
+        ; r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK")
+          }
+        }
+        ; var i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i)
+        ; function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0))); return this
+          }
+        }
+      var o = function () {this._q = []; return this}
+        ; var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset", "preInsert", "postInsert", "remove"]
+        ; for (var c = 0; c < a.length; c++) {s(o, a[c])} n.Identify = o; var u = function () {
+          this._q = []
+          ; return this
+        }
+        ; var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"]
+        ; for (var p = 0; p < l.length; p++) {s(u, l[p])} n.Revenue = u
+        ; var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut", "setVersionName", "setDomain", "setDeviceId", "enableTracking", "setGlobalUserProperties", "identify", "clearUserProperties", "setGroup", "logRevenueV2", "regenerateDeviceId", "groupIdentify", "onInit", "logEventWithTimestamp", "logEventWithGroups", "setSessionId", "resetSessionId"]
+        ; function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }
+          for (var n = 0; n < d.length; n++) {t(d[n])}
+        } v(n); n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase()
+            ; if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+              n._iq[e] = {_q: []}; v(n._iq[e])
+            } return n._iq[e]
+        }; e.amplitude = n
+    })(window, document);
+
+    amplitude.getInstance().init("9adde692857de1d72fa21be16473cbaa");
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="greetings">
+      <h1 class="centered-text hello">Hello.</h1>
+      <p class="centered-text iam">I'm Abdulellah.</p>
+    </div>
+    <hr />
+    <div class="social-network">
+      <a href="https://github.com/Abo7atm">Github</a>
+      <a href="https://linkedin.com/in/abdulellah-alnumay">LinkedIn</a>
+      <a href="mailto:iam@abdulellah.io">Email</a>
+    </div>
+  </div>
+</body>
+
 </html>
